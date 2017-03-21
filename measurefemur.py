@@ -10,6 +10,8 @@ import numpy as np
 from gias2.fieldwork.field import geometric_field
 from gias2.musculoskeletal import fw_femur_measurements
 
+from viewfemurmeasurements import viewMeasurements
+
 _selfdir = os.path.split(__file__)[0]
 FEMUR_LEFT_ENS = os.path.join(_selfdir, 'data', 'femur_left_quartic_flat.ens')
 FEMUR_LEFT_MESH = os.path.join(_selfdir, 'data', 'femur_left_quartic_flat.mesh')
@@ -85,11 +87,15 @@ def view(m):
 
     return v
 
+def view2(m):
+    viewMeasurements(m, m.GF)
+
 def main(args):
     gf = load_model(args.geof, args.side)
     m = measure(gf, args.outfile)
     if args.view:
-        view(m)
+        m.GF.name = 'femur'
+        view2(m)
 
 parser = argparse.ArgumentParser(description='Measure a femur model.')
 parser.add_argument(
