@@ -1,0 +1,10 @@
+*.pyc
+*.pyo
+*.o
+*.so
+*.c
+*~
+*err.log
+*out.log
+*.sublime-project
+*.sublime-workspace

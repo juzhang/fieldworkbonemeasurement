@@ -1,0 +1,15 @@
+anteversion_angle : 19.524987725
+epicondylar_width : 78.6575437257
+femoral_axis_length : 96.2986370426
+head_centre : [  1.03317640e+02   1.87652756e-02   1.20414895e+03]
+head_diameter : 45.2274693175
+length_long : 440.946662181
+length_short : 418.006151373
+midshaft_diameter : 241.256847536
+midshaft_width : 27.3807908102
+neck_axis : (array([-0.68995961,  0.33892733, -0.69350441]), array([   84.71182604,     9.75759414,  1186.24387606]))
+neck_shaft_angle : 124.349792051
+neck_width : 39.1690153723
+shaft_axis : (array([-0.17098222, -0.05925195,  0.98349087]), array([ 101.89242421,   24.02512398,  989.04256884]))
+subtrochanteric_diameter : 652.734111979
+subtrochanteric_width : 30.2454907243
